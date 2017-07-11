@@ -130,7 +130,6 @@ trait BasicStructure
 		if ($result["code"] != 0) {
 			throw new Exception("could not add user to group. " . $result["stdOut"] . " " . $result["stdErr"]);
 		}
-		array_push($this->createdGroupNames, $group);
 	}
 
 	/** @BeforeScenario */
